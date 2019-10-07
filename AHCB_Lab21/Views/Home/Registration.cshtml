@@ -1,0 +1,19 @@
+﻿@model RegistrationViewModel
+
+@{
+    ViewData["Title"] = "Registration";
+}
+
+<div class="center">
+    <form asp-controller="Home" asp-action="NewUser" asp- method="post">
+        <label asp-for="Username"></label>
+        <input asp-for="Username" /><br />
+        <label asp-for="Email"></label>
+        <input asp-for="Email" /><br />
+        <label asp-for="Password"></label>
+        <input type="password" asp-for="Password" /><br />
+        <label>I would like to receive weekly emails about some dumb crap!</label>
+        <input asp-for="OptIn" /><br />
+        <button type="submit">SUBMIT</button>
+    </form>
+</div>
